@@ -1,0 +1,31 @@
+{
+  "name": "@wishly/db",
+  "version": "1.0.0",
+  "private": true,
+  "exports": {
+    "./web": "./src/web/client.ts",
+    "./web/server": "./src/web/server.ts",
+    "./web/middleware": "./src/web/middleware.ts",
+    "./mobile": "./src/mobile/client.ts"
+  },
+  "dependencies": {
+    "@supabase/ssr": "^0.1.0",
+    "@supabase/supabase-js": "^2.39.0"
+  },
+  "peerDependencies": {
+    "@react-native-async-storage/async-storage": "^1.18.0 || ^2.0.0",
+    "next": "^14.0.0 || ^15.0.0",
+    "react": "^18.2.0 || ^19.0.0"
+  },
+  "peerDependenciesMeta": {
+    "next": {
+      "optional": true
+    },
+    "@react-native-async-storage/async-storage": {
+      "optional": true
+    }
+  },
+  "devDependencies": {
+    "@types/react": "^19.2.17"
+  }
+}

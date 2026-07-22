@@ -1,0 +1,16 @@
+export function WishlyLogo({ className = "w-8 h-8" }: { className?: string }) {
+  return (
+    <svg className={className} viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+      {/* Soft Cream/Rose Circle Background */}
+      <circle cx="16" cy="16" r="16" fill="#FFF1F2" />
+      {/* Puffy 'W' - Rose Pink */}
+      <path
+        d="M7 11C7 11 8.5 22 10.5 22C12.5 22 14.5 16 16 13C17.5 16 19.5 22 21.5 22C23.5 22 25 11 25 11"
+        stroke="#FB7185"
+        strokeWidth="3.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  )
+}
